@@ -10,15 +10,15 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
     <script>
         var config = {
-            apiKey: "AIzaSyAZVk8YI5PR8nfXyoSjvCbBTBB01_RhbTY",
-            authDomain: "meetpie-3c64a.firebaseapp.com",
-            databaseURL: "https://meetpie-3c64a.firebaseio.com",
-            projectId: "meetpie-3c64a",
-            storageBucket: "meetpie-3c64a.appspot.com",
-            messagingSenderId: "941417946944"
+            apiKey: "AIzaSyAdb45oe_JApXr1750vLYA7_GPc1lOMaDQ",
+            authDomain: "meetup-location.firebaseapp.com",
+            databaseURL: "https://meetup-location.firebaseio.com",
+            projectId: "meetup-location",
+            storageBucket: "meetup-location.appspot.com",
+            messagingSenderId: "302646667174"
         };
         firebase.initializeApp(config);
     </script>
@@ -46,13 +46,35 @@
 </head>
 
 <body>
-    <div class="jumbotron jumbotron-fluid frontJumbo border-bottom" id="bottomSpace">
+    <div class="jumbotron jumbotron-fluid frontJumbo mb-0">
         <div class="container">
             <h1 class="text-white font-italic">MeetPie</h1>
-            <p class="text-white h2 font-italic bg-dark">Welcome to MeetPie! Planning an event has never been so easy. You might say, "It's as easy as pie." Start by logging in so we can get baking.</p>
+            <p class="text-white h2 font-italic bg-dark">Welcome to MeetPie! Planning an event has never been so easy. You might say, "It's as easy as pie." Start by
+                logging in below.</p>
         </div>
     </div>
-    <div class="container mt-5">
+    <div class="pos-f-t align-right" id="bottomSpace">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark row">
+                <h4 class="text-white border rounded ml-2 p-2">
+                    <a href="">Main Page</a>
+                </h4>
+                <h4 class="text-white ml-4 border rounded p-2">
+                    <a href="">Event Page</a>
+                </h4>
+                <h4 class="text-white ml-4 border rounded p-2">
+                    <a href="">User</a>
+                </h4>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </div>
+    <div class="container">
         <div class="row justify-content-center align-items-center">
             <div class="col-md-4">
                 <div id="firebaseui-auth-container">
@@ -62,7 +84,7 @@
         </div>
     </div>
     <footer class="fixed-bottom bg-dark p-4 text-center text-white">
-        </footer>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -70,7 +92,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    
+
 
 </body>
 
