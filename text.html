@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <title>Main Page</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/sass.js/0.6.3/sass.min.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid mb-0 mainJumbo" id="bottomSpace">
+        <div class="container">
+            <h1 class="text-white font-italic">MeetPie</h1>
+            <p class="text-white h2 font-italic bg-dark">Almost done. Just pick what type of place you'd like to meet up at and we'll do the rest of the work for you.
+              Enjoy your event and come back soon!
+            </p>
+        </div>
+    </div>
+  <div class="pos-f-t align-right">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4 row">
+        <h4 class="text-white border rounded p-2">
+          <a href="">Main Page</a>
+        </h4>
+        <h4 class="text-white ml-4 border rounded p-2">
+          <a href="">Event Page</a>
+        </h4>
+        <h4 class="text-white ml-4 border rounded p-2">
+          <a href="">User</a>
+        </h4>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark mb-5">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+  </div>
+
+  <div class="container mainBody">
+    <div class="groupName text-center p-3">
+      <h3 class="text-white bg-secondary border rounded p-2" id="eventName">Event Name</h3>
+      <h3 class="text-white bg-secondary border rounded p-2"type="time" id="eventTime">7:45 PM</h3>
+    </div>
+    <div class="row">
+      <div class="col-md-3 card my-1" id="friendList">
+        <h3 class="border rounded bg-dark text-center">Who's Going?</h3>
+        <div id="inviteList"></div>
+      </div>
+      <div class="col-md-6 container card my-1" id="map"></div>
+      <!-- AIzaSyBu2PJgZJuNrCuoSEAjyZsM05WXBxSB744 -->
+      <div class="col-md-3 card container my-1" id="hangouts">
+        <h3 class="border rounded bg-dark text-center">What's Nearby</h3>
+        <div class="container nearbyIdeas"></div>
+      </div>
+    </div>
+  </div>
+  <div class="p-5" id="weather placeholder"></div>
+  <footer class="fixed-bottom bg-dark p-4 text-center text-white">
+  </footer>
+
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu2PJgZJuNrCuoSEAjyZsM05WXBxSB744&callback=initMap">
+  </script>
+  
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+#map {
+    height: 400px;
+    width:100%;
+   }
+
+.mainBody{
+    margin-bottom: 50px;
+}
+
+body{
+    background-image: url(https://previews.123rf.com/images/somegirl/somegirl1602/somegirl160200019/52916695-baking-background-with-sliced-cherry-pie-flour-rolling-pin-on-the-black-wooden-table-ingredients-for.jpg);
+    background-size: cover;
+}
+
+/* https://previews.123rf.com/images/somegirl/somegirl1602/somegirl160200019/52916695-baking-background-with-sliced-cherry-pie-flour-rolling-pin-on-the-black-wooden-table-ingredients-for.jpg
+http://www.tokkoro.com/picsup/471154-friends-background-wallpaper-free.jpeg */
+
+.frontJumbo{
+    background-image: url(https://upload.wikimedia.org/wikivoyage/en/thumb/9/95/ManhattanBanner5.jpg/1700px-ManhattanBanner5.jpg);
+    background-size: cover; 
+}
+
+.mainJumbo{
+    background-image: url(https://c1.staticflickr.com/3/2588/4159325073_ed9215815d_b.jpg);
+    background-size: cover; 
+}
+/* https://c1.staticflickr.com/3/2588/4159325073_ed9215815d_b.jpg 
+https://upload.wikimedia.org/wikivoyage/en/thumb/9/95/ManhattanBanner5.jpg/1700px-ManhattanBanner5.jpg*/
+
+#friendList{
+    background-image: url(https://previews.123rf.com/images/catalby/catalby1703/catalby170300174/74636872-baking-background-with-empty-notebook-for-recipes-or-ingredients-list-on-a-black-table-with-flour-eg-Stock-Photo.jpg);
+    background-size: cover;
+    
+}
+
+#hangouts{
+    background-image: url(http://cdn.mntm.me/d4/d1/c6/Five-Off-the-Beaten-Track-Places-to-Play-in-LA-d4d1c658e5ed488f9f87e2c518a7c531.jpg);
+    background-size: cover;
+    
+}
+
+h3{
+ display: inline;
+ color: white;
+}
+
+#login{
+    padding: 120px;
+}
+
+h1{
+    font-size: 100px;
+}
+
+#bottomSpace{
+ margin-bottom: 150px;
+}

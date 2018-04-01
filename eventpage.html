@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<title>Event</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+
+  <div class="pos-f-t align-right" id="bottomSpace">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4 row">
+        <h4 class="text-white border rounded p-2">
+          <a href="">Main Page</a>
+        </h4>
+        <h4 class="text-white ml-4 border rounded p-2">
+          <a href="">Event Page</a>
+        </h4>
+        <h4 class="text-white ml-4 border rounded p-2">
+          <a href="">User</a>
+        </h4>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark mb-5">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+  </div>
+  <div class="container border rounded bg-secondary mt-5">
+    <form class="p-4">
+      <div class="form-group row">
+        <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Event Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control form-control-lg" id="eventName" placeholder="">
+        </div>
+      </div>
+      <div class="form-group row float">
+        <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Meetup Time</label>
+        <div class="col-sm-4">
+          <input type="time" class="form-control form-control-lg" id="dateTime" placeholder="">
+        </div>
+        <label for="colFormLabelLg" class="col-sm-1 col-form-label col-form-label-lg">Date</label>
+        <div class="col-sm-5">
+            <input type="date" class="form-control form-control-lg" id="date" placeholder="">
+          </div>
+      </div>
+      <div class="form-row mb-3">
+        <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Who's Going</label>
+        <div class="col-auto">
+          <input type="text" class="form-control form-control-lg" id="groupMember" placeholder="group member">
+        </div>
+        <div class="col-auto">
+          <button id="addFriendList" type="submit" class="btn btn-primary rounded">Add Group Member</button>
+        </div>
+      </div>
+    </form>
+    <div class="mainBody m-5 row justify-content-md-center">
+      <div class="col-sm-3 card text-center p-5 m-2" id="friendList"> </div>
+      <div id="map" class="container card col-sm-8"></div>
+      <!-- AIzaSyBu2PJgZJuNrCuoSEAjyZsM05WXBxSB744 -->
+    </div>
+    <div class="row justify-content-md-center">
+      <button id="submit" type="submit" class="btn btn-primary btn-lg rounded m-2">Submit</button>
+    </div>
+  </div>
+
+
+  <div class="p-5" id="weather placeholder"></div>
+
+  <footer class="fixed-bottom bg-dark p-4 text-center text-white"></footer>
+  
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu2PJgZJuNrCuoSEAjyZsM05WXBxSB744&callback=initMap">
+  </script>
+  
+</body>
+
+</html>
